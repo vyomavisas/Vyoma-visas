@@ -9,14 +9,7 @@ const values = [
   { icon: Award, title: "Excellence", desc: "We maintain the highest standards in visa consultancy and client service." },
 ];
 
-const whyChoose = [
-  "Expert guidance for 11+ countries",
-  "High visa approval success rate",
-  "Transparent pricing with no hidden charges",
-  "Personalized documentation support",
-  "End-to-end visa application management",
-  "Dedicated support team",
-];
+
 
 export default function AboutPage() {
   return (
@@ -132,34 +125,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Why Choose Us */}
-      <section className="py-16 sm:py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl font-bold text-teal font-[family-name:var(--font-playfair)]">
-                Why Choose Vyoma Visas?
-              </h2>
-              <div className="w-12 h-1 bg-gold mt-3 mb-6" />
-              <div className="space-y-4">
-                {whyChoose.map((item) => (
-                  <div key={item} className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-gold shrink-0 mt-0.5" />
-                    <span className="text-charcoal">{item}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div>
-              <img
-                src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&h=400&fit=crop"
-                alt="Professional team"
-                className="rounded-2xl shadow-lg w-full object-cover aspect-[4/3]"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Founder's Message */}
       <section className="py-16 sm:py-20 bg-teal">
@@ -178,7 +144,7 @@ export default function AboutPage() {
             our responsibility, and we take it seriously.&rdquo;
           </blockquote>
           <div className="mt-6">
-            <p className="text-gold font-semibold">Anil Kumar SV & Arundhathi</p>
+            <p className="text-gold font-semibold">Anil</p>
             <p className="text-cream/60 text-sm">Founders, Vyoma Visa Consultancy</p>
           </div>
         </div>

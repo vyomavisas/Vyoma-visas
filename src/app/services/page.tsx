@@ -69,27 +69,27 @@ export default function ServicesPage() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="py-16 sm:py-20 bg-teal">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white font-[family-name:var(--font-playfair)]">
-            Not Sure Which Visa You Need?
-          </h2>
-          <p className="mt-4 text-cream/80 text-lg">
-            Our experts will guide you to the right visa category based on your travel purpose.
-          </p>
-          <div className="mt-8">
-            <a
-              href={`${WHATSAPP_BASE}?text=Hi%20Vyoma%20Visas%2C%20I%20need%20help%20choosing%20the%20right%20visa%20type.`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-gold text-teal font-semibold px-8 py-4 rounded-lg hover:bg-gold-light transition-colors"
-            >
-              Get Expert Guidance
-              <ArrowRight className="w-4 h-4" />
-            </a>
-          </div>
-        </div>
-      </section>
+<section className="py-16 sm:py-20 bg-gradient-to-r from-gold to-gold-light">
+  <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 className="text-3xl sm:text-4xl font-bold text-teal font-[family-name:var(--font-playfair)]">
+      Not Sure Which Visa You Need?
+    </h2>
+    <p className="mt-4 text-teal/80 text-lg">
+      Our experts will guide you to the right visa category based on your travel purpose.
+    </p>
+    <div className="mt-8">
+      <a
+        href={`${WHATSAPP_BASE}?text=Hi%20Vyoma%20Visas%2C%20I%20need%20help%20choosing%20the%20right%20visa%20type.`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center gap-2 bg-teal text-white font-semibold px-8 py-4 rounded-lg hover:bg-teal-dark transition-colors"
+      >
+        Get Expert Guidance
+      </a>
+    </div>
+  </div>
+</section>
+
     </div>
   );
 }

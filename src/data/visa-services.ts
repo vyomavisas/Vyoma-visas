@@ -234,7 +234,7 @@ export const visaServices: VisaService[] = [
     slug: "study-visa",
     icon: GraduationCap,
     title: "Study Visa",
-    image: "https://images.unsplash.com/photo-1523050854058-8df90110c8f1?w=600&h=400&fit=crop",
+    image: "/study.jpg",
     shortDescription:
       "A Study Visa allows international students to study at recognized educational institutions in a foreign country for academic, vocational, or professional training programs.",
     whatIs:

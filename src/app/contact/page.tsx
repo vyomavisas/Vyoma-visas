@@ -1,9 +1,21 @@
 "use client";
 
 import { useState } from "react";
-import { MapPin, Phone, Mail, Send, ArrowRight } from "lucide-react";
+import { MapPin, Phone, Mail, Send, ArrowRight , Instagram,
+  Linkedin,
+  Facebook,
+  Twitter} from "lucide-react";
 
 const WHATSAPP_BASE = "https://wa.me/919008497718";
+const WhatsAppIcon = ({ className = "" }) => (
+  <svg
+    viewBox="0 0 32 32"
+    className={className}
+    fill="currentColor"
+  >
+    <path d="M16 2.9C9.1 2.9 3.5 8.5 3.5 15.4c0 2.7.9 5.2 2.3 7.2L3 29l6.6-2.7c1.9 1 4 1.5 6.4 1.5 6.9 0 12.5-5.6 12.5-12.5S22.9 2.9 16 2.9zm0 22.7c-2.2 0-4.3-.6-6.1-1.7l-.4-.2-3.9 1.6 1.6-3.8-.3-.4c-1.2-1.9-1.8-4.1-1.8-6.4C5.1 9.5 10 4.6 16 4.6s10.9 4.9 10.9 10.9S22 25.6 16 25.6zm6.1-7.9c-.3-.1-1.9-.9-2.2-1s-.5-.1-.7.1-.8 1-1 1.2-.4.2-.7.1c-.3-.1-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.5.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.7-1-2.3-.3-.6-.6-.5-.8-.5h-.7c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.3 3c.1.2 2.2 3.4 5.4 4.8.7.3 1.3.5 1.7.6.7.2 1.3.2 1.8.1.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.3.2-1.5-.1-.2-.3-.3-.6-.4z" />
+  </svg>
+);
 
 const serviceTypes = [
   "Tourist Visa",
@@ -15,10 +27,10 @@ const serviceTypes = [
 ];
 
 const countries = [
+  // Main destinations (Home page)
   "USA",
   "UK",
   "Australia",
-  "Schengen",
   "Japan",
   "South Korea",
   "Ireland",
@@ -26,17 +38,53 @@ const countries = [
   "UAE",
   "Vietnam",
   "Israel",
+
+  // Schengen options
+  "Schengen (Any Country)",
+  "Austria",
+  "Belgium",
+  "Croatia",
+  "Czech Republic",
+  "Denmark",
+  "Estonia",
+  "Finland",
+  "France",
+  "Germany",
+  "Greece",
+  "Hungary",
+  "Italy",
+  "Latvia",
+  "Lithuania",
+  "Luxembourg",
+  "Malta",
+  "Netherlands",
+  "Poland",
+  "Portugal",
+  "Slovakia",
+  "Slovenia",
+  "Spain",
+  "Sweden",
+  "Iceland",
+  "Liechtenstein",
+  "Norway",
+  "Switzerland",
+
+  // Fallback
+  "Other",
 ];
+
 
 export default function ContactPage() {
   const [form, setForm] = useState({
-    name: "",
-    phone: "",
-    email: "",
-    service: "",
-    country: "",
-    message: "",
-  });
+  name: "",
+  phone: "",
+  email: "",
+  service: "",
+  country: "",
+  otherCountry: "",
+  message: "",
+});
+
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -131,7 +179,7 @@ export default function ContactPage() {
               {/* Social Links */}
               <div className="flex items-center gap-4 pt-2">
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/vyomavisas?utm_source=qr&igsh=MTlzNGNkZXZ0OGQwcA=="
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-teal hover:text-gold transition-colors text-sm font-medium"
@@ -142,7 +190,7 @@ export default function ContactPage() {
                   Instagram
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/vyoma-visas-2873483a4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-teal hover:text-gold transition-colors text-sm font-medium"
@@ -152,6 +200,25 @@ export default function ContactPage() {
                   </svg>
                   LinkedIn
                 </a>
+                <a
+      href="https://x.com/VyomaVisas"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center gap-2 text-teal hover:text-gold transition-colors text-sm font-medium"
+    >
+      <Twitter className="w-5 h-5" />
+      Twitter (X)
+    </a>
+
+    <a
+      href="https://www.facebook.com/share/1JWst9JbK3/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center gap-2 text-teal hover:text-gold transition-colors text-sm font-medium"
+    >
+      <Facebook className="w-5 h-5" />
+      Facebook
+    </a>
               </div>
             </div>
 
@@ -215,19 +282,40 @@ export default function ContactPage() {
                       </select>
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-charcoal mb-1">Preferred Country</label>
-                      <select
-                        required
-                        value={form.country}
-                        onChange={(e) => updateField("country", e.target.value)}
-                        className="w-full border border-border rounded-lg px-4 py-3 text-sm bg-cream focus:outline-none focus:ring-2 focus:ring-gold focus:border-gold"
-                      >
-                        <option value="">Select country</option>
-                        {countries.map((c) => (
-                          <option key={c} value={c}>{c}</option>
-                        ))}
-                      </select>
-                    </div>
+  <label className="block text-sm font-medium text-charcoal mb-1">
+    Preferred Country
+  </label>
+  <select
+    required
+    value={form.country}
+    onChange={(e) => updateField("country", e.target.value)}
+    className="w-full border border-border rounded-lg px-4 py-3 text-sm bg-cream focus:outline-none focus:ring-2 focus:ring-gold focus:border-gold"
+  >
+    <option value="">Select country</option>
+    {countries.map((c) => (
+      <option key={c} value={c}>
+        {c}
+      </option>
+    ))}
+  </select>
+</div>
+{form.country === "Other" && (
+  <div>
+    <label className="block text-sm font-medium text-charcoal mb-1">
+      Specify Country
+    </label>
+    <input
+      type="text"
+      required
+      value={form.otherCountry}
+      onChange={(e) => updateField("otherCountry", e.target.value)}
+      className="w-full border border-border rounded-lg px-4 py-3 text-sm bg-cream focus:outline-none focus:ring-2 focus:ring-gold focus:border-gold"
+      placeholder="Enter country name"
+    />
+  </div>
+)}
+
+
                   </div>
 
                   <div>
@@ -279,34 +367,43 @@ export default function ContactPage() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="py-16 sm:py-20 bg-teal">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-white font-[family-name:var(--font-playfair)]">
-            Prefer to Talk Directly?
-          </h2>
-          <p className="mt-4 text-cream/80 text-lg">
-            Call us or send a WhatsApp message for instant assistance.
-          </p>
-          <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a
-              href="tel:9008497718"
-              className="inline-flex items-center gap-2 bg-gold text-teal font-semibold px-8 py-4 rounded-lg hover:bg-gold-light transition-colors"
-            >
-              <Phone className="w-4 h-4" />
-              Call Now
-            </a>
-            <a
-              href={`${WHATSAPP_BASE}?text=Hi%20Vyoma%20Visas%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services.`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 border-2 border-gold text-gold font-semibold px-8 py-4 rounded-lg hover:bg-gold hover:text-teal transition-colors"
-            >
-              WhatsApp Us
-              <ArrowRight className="w-4 h-4" />
-            </a>
-          </div>
-        </div>
-      </section>
+      {/* Bottom CTA */}
+<section className="py-16 sm:py-20 bg-cream">
+  <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 className="text-3xl font-bold text-teal font-[family-name:var(--font-playfair)]">
+      Prefer to Talk Directly?
+    </h2>
+
+    <p className="mt-4 text-charcoal-light text-lg">
+      Call us or send a WhatsApp message for instant assistance.
+    </p>
+
+    <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+      
+      {/* Call Button */}
+      <a
+        href="tel:9008497718"
+        className="inline-flex items-center gap-2 bg-teal text-white font-semibold px-8 py-4 rounded-lg hover:bg-[#083c3a] transition-colors"
+      >
+        <Phone className="w-4 h-4" />
+        Call Now
+      </a>
+
+      <a
+  href={`${WHATSAPP_BASE}?text=Hi%20Vyoma%20Visas%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services.`}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center gap-2 bg-[#25D366] text-white font-semibold px-8 py-4 rounded-lg hover:bg-[#1ebe5d] transition-colors"
+>
+  <WhatsAppIcon className="w-5 h-5" />
+  WhatsApp Us
+</a>
+
+
+    </div>
+  </div>
+</section>
+
     </div>
   );
 }
