@@ -1,0 +1,80 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-teal: #0F4C5C;
+  --color-teal-light: #1A6B7F;
+  --color-teal-dark: #0A3640;
+  --color-gold: #C8A951;
+  --color-gold-light: #D4BC6E;
+  --color-gold-dark: #A68B3A;
+  --color-cream: #FAF7F2;
+  --color-cream-dark: #F0EBE1;
+  --color-charcoal: #2D2D2D;
+  --color-charcoal-light: #4A4A4A;
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --radius: 0.625rem;
+  --background: #FAF7F2;
+  --foreground: #2D2D2D;
+  --card: #FFFFFF;
+  --card-foreground: #2D2D2D;
+  --popover: #FFFFFF;
+  --popover-foreground: #2D2D2D;
+  --primary: #0F4C5C;
+  --primary-foreground: #FAF7F2;
+  --secondary: #F0EBE1;
+  --secondary-foreground: #0F4C5C;
+  --muted: #F0EBE1;
+  --muted-foreground: #4A4A4A;
+  --accent: #C8A951;
+  --accent-foreground: #0F4C5C;
+  --destructive: #dc2626;
+  --border: #E5DFD3;
+  --input: #E5DFD3;
+  --ring: #C8A951;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Hide Next.js error overlay portal */
+nextjs-portal {
+  display: none !important;
+}
