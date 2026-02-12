@@ -24,7 +24,8 @@ export function Footer() {
                 alt="Vyoma Visas"
                 width={40}
                 height={40}
-                className="w-10 h-10 brightness-0 invert"
+                className="w-10 h-10 object-contain"
+
               />
               <h3 className="text-2xl font-bold font-[family-name:var(--font-playfair)]">
                 Vyoma<span className="text-gold"> Visas</span>
