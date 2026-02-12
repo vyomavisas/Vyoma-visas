@@ -17,7 +17,11 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  outputFileTracingRoot: path.resolve(__dirname, '../../'),
+  // REMOVE OR CHANGE THIS LINE:
+  // outputFileTracingRoot: path.resolve(__dirname, '../../'), 
+  // If you really need it, set it to the current directory:
+  outputFileTracingRoot: path.join(__dirname),
+
   typescript: {
     ignoreBuildErrors: true,
   },
