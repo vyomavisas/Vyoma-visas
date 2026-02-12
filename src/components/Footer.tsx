@@ -1,15 +1,23 @@
 import Link from "next/link";
 import Image from "next/image";
-import { MapPin, Phone, Mail, Instagram, Linkedin, Twitter, Facebook } from "lucide-react";
+import {
+  MapPin,
+  Phone,
+  Mail,
+  Instagram,
+  Linkedin,
+  Twitter,
+  Facebook,
+  Heart,
+} from "lucide-react";
 
 export function Footer() {
   return (
     <footer className="bg-teal text-cream">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
-
           {/* Brand */}
-          <div className="lg:col-span-1">
+          <div>
             <Link href="/" className="flex items-center gap-2 mb-3">
               <Image
                 src="/logo.png"
@@ -106,9 +114,31 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="border-t border-cream/20 mt-10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-cream/60 text-xs">
+        {/* Bottom Section */}
+        <div className="border-t border-cream/20 mt-10 pt-6 flex flex-col gap-4 items-center">
+          
+          {/* Credit ABOVE copyright */}
+          <div className="flex items-center gap-1 text-xs text-cream/70">
+            Made with
+            <Heart className="h-4 w-4 text-red-500 mx-1" />
+            by
+            <a
+              href="https://staffarc.in"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1 text-gold hover:underline ml-1"
+            >
+              <img
+                src="https://www.staffarc.in/images/Staffarc-logo.png"
+                alt="StaffArc logo"
+                className="h-4 w-4 object-contain"
+              />
+              StaffArc
+            </a>
+          </div>
+
+          {/* Copyright */}
+          <p className="text-cream/60 text-xs text-center">
             &copy; {new Date().getFullYear()} Vyoma Visas. All rights reserved.
           </p>
 
@@ -122,7 +152,6 @@ export function Footer() {
             >
               <Instagram className="w-4 h-4" />
             </a>
-
             <a
               href="https://www.linkedin.com/in/vyoma-visas-2873483a4"
               target="_blank"
@@ -131,7 +160,6 @@ export function Footer() {
             >
               <Linkedin className="w-4 h-4" />
             </a>
-
             <a
               href="https://x.com/VyomaVisas"
               target="_blank"
@@ -140,7 +168,6 @@ export function Footer() {
             >
               <Twitter className="w-4 h-4" />
             </a>
-
             <a
               href="https://www.facebook.com/share/1JWst9JbK3/"
               target="_blank"
