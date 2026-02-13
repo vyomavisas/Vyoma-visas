@@ -1,6 +1,6 @@
 import { ArrowRight, Shield, Eye, Heart, Award, Users, CheckCircle } from "lucide-react";
 
-const WHATSAPP_BASE = "https://wa.me/918105099612";
+const WHATSAPP_BASE = "https://wa.me/919008497718";
 
 const values = [
   { icon: Shield, title: "Trust & Transparency", desc: "We believe in honest, upfront guidance. No hidden fees, no false promises." },

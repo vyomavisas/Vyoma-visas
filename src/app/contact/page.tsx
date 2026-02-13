@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { MapPin, Phone, Mail, Send, ArrowRight, Instagram, Linkedin, Facebook, Twitter } from "lucide-react";
 
-const WHATSAPP_BASE = "https://wa.me/918105099612";
+const WHATSAPP_BASE = "https://wa.me/919008497718";
 const GOOGLE_MAPS_LINK = "https://www.google.com/maps/search/?api=1&query=Vyoma+Visas+Ground+Floor+No+67+7th+Cross+Road+Thammenahalli+Village+Bengaluru+Karnataka+560090";// Replace with your exact share link if different
 
 const WhatsAppIcon = ({ className = "" }) => (

@@ -52,7 +52,7 @@ export function Header() {
             {/* Desktop CTA */}
             <div className="hidden md:flex">
               <a
-                href="https://wa.me/918105099612?text=Hi%20Vyoma%20Visas%2C%20I%20would%20like%20to%20book%20a%20consultation."
+                href="https://wa.me/919008497718?text=Hi%20Vyoma%20Visas%2C%20I%20would%20like%20to%20book%20a%20consultation."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gold text-teal font-semibold px-5 py-2.5 rounded-lg hover:bg-gold-light transition-colors text-sm"

@@ -10,7 +10,7 @@ import { Star, CheckCircle, ChevronDown, ChevronUp, ArrowRight, Globe, Send, Gra
   MessageCircle } from "lucide-react";
 import Link from "next/link";
 
-const WHATSAPP_BASE = "https://wa.me/918105099612";
+const WHATSAPP_BASE = "https://wa.me/919008497718";
 
 const usaVisaTypes = ["Tourist Visa", "Business Visa", "Study Visa", "Dependent Visa"];
 

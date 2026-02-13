@@ -13,7 +13,7 @@ import {
 } from "lucide-react";
 import { visaChecklists, ChecklistSection } from "@/data/visa-checklists";
 
-const WHATSAPP_BASE = "https://wa.me/918105099612";
+const WHATSAPP_BASE = "https://wa.me/919008497718";
 
 // Restored sample reviews for the slug page
 const reviews = [
