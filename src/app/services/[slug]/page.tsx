@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight, CheckCircle, FileText, Clock, DollarSign, AlertTriangle, Award, ShieldCheck, MessageCircle } from "lucide-react";
 import { visaServices, getVisaBySlug } from "@/data/visa-services";
 
-const WHATSAPP_BASE = "https://wa.me/919008497718";
+const WHATSAPP_BASE = "https://wa.me/918105099612";
 
 export function generateStaticParams() {
   return visaServices.map((s) => ({ slug: s.slug }));

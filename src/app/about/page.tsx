@@ -1,6 +1,6 @@
 import { ArrowRight, Shield, Eye, Heart, Award, Users, CheckCircle } from "lucide-react";
 
-const WHATSAPP_BASE = "https://wa.me/919008497718";
+const WHATSAPP_BASE = "https://wa.me/918105099612";
 
 const values = [
   { icon: Shield, title: "Trust & Transparency", desc: "We believe in honest, upfront guidance. No hidden fees, no false promises." },
@@ -144,7 +144,7 @@ export default function AboutPage() {
             our responsibility, and we take it seriously.&rdquo;
           </blockquote>
           <div className="mt-6">
-            <p className="text-gold font-semibold">Anil</p>
+            <p className="text-gold font-semibold"> Anil Kumar SV co-founder Arundhathi</p>
             <p className="text-cream/60 text-sm">Founders, Vyoma Visa Consultancy</p>
           </div>
         </div>
