@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { visaServices } from "@/data/visa-services";
 
-const WHATSAPP_BASE = "https://wa.me/919008497718";
+const WHATSAPP_BASE = "https://wa.me/918105099612";
 
 export default function ServicesPage() {
   return (

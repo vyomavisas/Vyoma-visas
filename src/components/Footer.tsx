@@ -16,25 +16,38 @@ export function Footer() {
     <footer className="bg-teal text-cream">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
-          {/* Brand */}
-          <div>
-            <Link href="/" className="flex items-center gap-2 mb-3">
-              <Image
-                src="/logo.png"
-                alt="Vyoma Visas"
-                width={40}
-                height={40}
-                className="w-10 h-10 object-contain"
-
-              />
-              <h3 className="text-2xl font-bold font-[family-name:var(--font-playfair)]">
-                Vyoma<span className="text-gold"> Visas</span>
-              </h3>
-            </Link>
-            <p className="mt-3 text-cream/80 text-sm leading-relaxed">
-              Your trusted partner for global visa solutions. Reliable, transparent and
-              professional visa consultancy.
-            </p>
+          {/* Brand & Service Areas */}
+          <div className="space-y-6">
+            <div>
+              <Link href="/" className="flex items-center gap-2 mb-3">
+                <Image
+                  src="/logo.png"
+                  alt="Vyoma Visas"
+                  width={40}
+                  height={40}
+                  className="w-10 h-10 object-contain"
+                />
+                <h3 className="text-2xl font-bold font-[family-name:var(--font-playfair)]">
+                  Vyoma<span className="text-gold"> Visas</span>
+                </h3>
+              </Link>
+              <p className="mt-3 text-cream/80 text-sm leading-relaxed">
+                Your trusted partner for global visa solutions. Reliable, transparent and
+                professional visa consultancy.
+              </p>
+            </div>
+            
+            {/* Added Service Areas here for better visibility */}
+            <div>
+              <h4 className="text-gold font-semibold mb-2 text-sm tracking-wider uppercase">
+                Service Areas
+              </h4>
+              <p className="text-cream/70 text-xs leading-relaxed">
+                Serving clients across Bangalore, including Whitefield, Marathahalli, 
+                Electronic City, Indiranagar, MG Road, Hebbal, Yelahanka, Rajajinagar, 
+                Peenya, Jalahalli, and nearby areas.
+              </p>
+            </div>
           </div>
 
           {/* Quick Links */}
@@ -94,7 +107,8 @@ export function Footer() {
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 mt-0.5 text-gold shrink-0" />
                 <span>
-                  Ground Floor, 67, 7th Cross Rd, Thammenahalli Village, Bengaluru – 560090
+                  Vyoma Visas, Ground Floor, No. 67, 7th Cross Road,
+                  Thammenahalli Village, Bengaluru, Karnataka – 560090, India
                 </span>
               </div>
               <a
@@ -102,7 +116,7 @@ export function Footer() {
                 className="flex items-center gap-2 hover:text-gold transition-colors"
               >
                 <Phone className="w-4 h-4 text-gold shrink-0" />
-                9008497718 / 8105099612
+                8105099612 / 9008497718
               </a>
               <a
                 href="mailto:vyomavisas@gmail.com"
@@ -118,7 +132,7 @@ export function Footer() {
         {/* Bottom Section */}
         <div className="border-t border-cream/20 mt-10 pt-6 flex flex-col gap-4 items-center">
           
-          {/* Credit ABOVE copyright */}
+          {/* Credit */}
           <div className="flex items-center gap-1 text-xs text-cream/70">
             Made with
             <Heart className="h-4 w-4 text-red-500 mx-1" />
@@ -145,36 +159,16 @@ export function Footer() {
 
           {/* Social Icons */}
           <div className="flex items-center gap-4">
-            <a
-              href="https://www.instagram.com/vyomavisas"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-cream/60 hover:text-gold transition-colors"
-            >
+            <a href="https://www.instagram.com/vyomavisas" target="_blank" className="text-cream/60 hover:text-gold transition-colors">
               <Instagram className="w-4 h-4" />
             </a>
-            <a
-              href="https://www.linkedin.com/in/vyoma-visas-2873483a4"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-cream/60 hover:text-gold transition-colors"
-            >
+            <a href="https://www.linkedin.com/in/vyoma-visas-2873483a4" target="_blank" className="text-cream/60 hover:text-gold transition-colors">
               <Linkedin className="w-4 h-4" />
             </a>
-            <a
-              href="https://x.com/VyomaVisas"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-cream/60 hover:text-gold transition-colors"
-            >
+            <a href="https://x.com/VyomaVisas" target="_blank" className="text-cream/60 hover:text-gold transition-colors">
               <Twitter className="w-4 h-4" />
             </a>
-            <a
-              href="https://www.facebook.com/share/1JWst9JbK3/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-cream/60 hover:text-gold transition-colors"
-            >
+            <a href="https://www.facebook.com/share/1JWst9JbK3/" target="_blank" className="text-cream/60 hover:text-gold transition-colors">
               <Facebook className="w-4 h-4" />
             </a>
           </div>

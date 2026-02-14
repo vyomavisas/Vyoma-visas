@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { MapPin, Phone, Mail, Send, ArrowRight, Instagram, Linkedin, Facebook, Twitter } from "lucide-react";
 
-const WHATSAPP_BASE = "https://wa.me/919008497718";
+const WHATSAPP_BASE = "https://wa.me/918105099612";
 const GOOGLE_MAPS_LINK = "https://www.google.com/maps/search/?api=1&query=Vyoma+Visas+Ground+Floor+No+67+7th+Cross+Road+Thammenahalli+Village+Bengaluru+Karnataka+560090";// Replace with your exact share link if different
 
 const WhatsAppIcon = ({ className = "" }) => (
@@ -58,8 +58,9 @@ export default function ContactPage() {
                   <div className="w-10 h-10 bg-cream rounded-lg flex items-center justify-center shrink-0"><Phone className="w-5 h-5 text-gold" /></div>
                   <div>
                     <h3 className="font-semibold text-teal text-sm">Phone</h3>
-                    <a href="tel:9008497718" className="text-charcoal text-sm hover:text-gold transition-colors block">9008497718</a>
+                    
                     <a href="tel:8105099612" className="text-charcoal text-sm hover:text-gold transition-colors block">8105099612</a>
+                    <a href="tel:9008497718" className="text-charcoal text-sm hover:text-gold transition-colors block">9008497718</a>
                   </div>
                 </div>
 
@@ -129,20 +130,28 @@ export default function ContactPage() {
             <div className="w-16 h-1 bg-gold mx-auto mt-4" />
           </div>
           {/* WRAPPED IN AN ANCHOR TAG FOR DIRECT LINKING */}
-          <a href={GOOGLE_MAPS_LINK} target="_blank" rel="noopener noreferrer" className="block relative rounded-[2rem] overflow-hidden shadow-2xl border-4 border-cream hover:opacity-95 transition-opacity group">
-            <div className="absolute inset-0 z-10 bg-black/0 group-hover:bg-black/5 transition-colors flex items-center justify-center">
-               <span className="bg-white text-teal px-6 py-2 rounded-full font-bold shadow-lg opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-4 group-hover:translate-y-0">Open in Google Maps</span>
-            </div>
-           <iframe
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.1234567890!2d77.5123456789!3d13.0612345678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3d8438699999%3A0x1234567890abcdef!2sVyoma%20Visas!5e0!3m2!1sen!2sin!4v1234567890123"
-  width="100%"
-  height="450"
-  style={{ border: 0, pointerEvents: 'none' }}
-  allowFullScreen
-  loading="lazy"
-  title="Vyoma Visas Office Location"
-/>
-          </a>
+          <a 
+  href="https://maps.app.goo.gl/9F2y2oKbZtfD4RNQ9" 
+  target="_blank" 
+  rel="noopener noreferrer" 
+  className="block relative rounded-[2rem] overflow-hidden shadow-2xl border-4 border-cream hover:opacity-95 transition-opacity group"
+>
+  <div className="absolute inset-0 z-10 bg-black/0 group-hover:bg-black/5 transition-colors flex items-center justify-center">
+     <span className="bg-white text-teal px-6 py-2 rounded-full font-bold shadow-lg opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-4 group-hover:translate-y-0 flex items-center gap-2">
+       <MapPin className="w-4 h-4" /> View on Google Maps
+     </span>
+  </div>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.115843467657!2d77.5028519!3d13.0918114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae144fee937a17%3A0xd4b7f5d797f5328b!2sVyoma%20Visas!5e0!3m2!1sen!2sin!4v1739551350000!5m2!1sen!2sin"
+    width="100%"
+    height="450"
+    style={{ border: 0, pointerEvents: 'none' }}
+    allowFullScreen
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+    title="Vyoma Visas Office Location"
+  />
+</a>
         </div>
       </section>
 

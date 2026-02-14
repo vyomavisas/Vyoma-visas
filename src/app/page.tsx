@@ -10,7 +10,7 @@ import { Star, CheckCircle, ChevronDown, ChevronUp, ArrowRight, Globe, Send, Gra
   MessageCircle } from "lucide-react";
 import Link from "next/link";
 
-const WHATSAPP_BASE = "https://wa.me/919008497718";
+const WHATSAPP_BASE = "https://wa.me/918105099612";
 
 const usaVisaTypes = ["Tourist Visa", "Business Visa", "Study Visa", "Dependent Visa"];
 
@@ -102,16 +102,15 @@ export default function HomePage() {
               <Globe className="w-5 h-5 text-gold" />
               <span className="text-gold text-sm font-medium tracking-wider uppercase">Vyoma Visas Consultancy</span>
             </div>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight font-[family-name:var(--font-playfair)]">
-              Your Trusted Partner for <span className="text-gold">Global Visa Solutions</span>
+            <h1 className="text-4xl sm:text-5xl lg:text-5xl font-bold leading-tight font-[family-name:var(--font-playfair)]">
+              Your Trusted Partner for <span className="text-gold">Global Visa Solutions</span> in Bangalore
             </h1>
             <p className="mt-6 text-lg text-cream/90 max-w-2xl leading-relaxed">
-              Reliable, transparent and professional visa consultancy for global travel.
-              We make your visa journey smooth and stress-free.
+               Our visa consultancy provides professional visa services in Bangalore and nearby areas
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <button onClick={scrollToUSA} className="bg-gold text-teal font-bold px-8 py-4 rounded-lg hover:bg-gold-light transition-all shadow-lg flex items-center justify-center gap-2">
-                Book USA Visa <ArrowRight className="w-4 h-4" />
+                Book USA Visa Appointment <ArrowRight className="w-4 h-4" />
               </button>
               <Link href="/contact" className="border-2 border-gold text-gold font-bold px-8 py-4 rounded-lg hover:bg-gold hover:text-teal transition-all flex items-center justify-center gap-2">
                 Contact Us
